@@ -31,11 +31,23 @@
     position: relative;
     top: 160px;
     left: 30px;
+    box-shadow: 1px 4px 8px greenyellow;
 }
 #todo-form{
     position: fixed;
     bottom: 450px;
     left: 600px;
+    width: 350px;
+}
+#todo-form input{
+    background-color: transparent;
+    width: 200px;
+    border: 0px;
+    border-bottom: 3px solid;
+    margin-right: 10px;
+}
+#todo-form input::placeholder{
+    font-size: 20px;
 }
 #todo-list{
     position: fixed;
@@ -44,7 +56,12 @@
     width: 400px;
     height: 400px;
 }
+
 ul li button{
     background-color: transparent;
-    border: 0px;   
+    border: 0px;
+    font-size: 30px   
+}
+ul li{
+    font-size: 30px;
 }
