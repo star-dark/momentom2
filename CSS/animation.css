@@ -1,0 +1,12 @@
+@keyframes clockMovement {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+#clock{
+    animation: clockMovement 1s ease-in-out infinite;
+}

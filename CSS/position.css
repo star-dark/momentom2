@@ -32,3 +32,19 @@
     top: 160px;
     left: 30px;
 }
+#todo-form{
+    position: fixed;
+    bottom: 450px;
+    left: 600px;
+}
+#todo-list{
+    position: fixed;
+    left: 580px;
+    bottom: 0px;
+    width: 400px;
+    height: 400px;
+}
+ul li button{
+    background-color: transparent;
+    border: 0px;   
+}

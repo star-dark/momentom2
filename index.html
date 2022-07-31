@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/position.css">
+    <link rel="stylesheet" href="CSS/animation.css">
 </head>
 <body>
     <div class="upper__bar">
@@ -21,7 +22,6 @@
       <h2 id="clock"></h1>
       <h1 class="hidden" id="greeting"></h1>
     </div>
-    <div>
       <div id="picframe">
           <div class="btn__frame">
             <button class="flower__btn" id="pre-btn"><</button>
@@ -30,13 +30,17 @@
           <i class="fa-solid fa-circle-info fa-xl"></i>
       </div>
       <div>
+        <form id="todo-form">
+            <input required type="text">
+            <button id="submitTodo">submit</button>
+        </form>
         <ul id="todo-list"></ul>
       </div>
-    </div>
     <script src="JS/index.js"></script>
     <script src="JS/random.js"></script>
     <script src="JS/clock.js"></script>
     <script src="JS/weather.js"></script>
+    <script src="JS/todo.js"></script>
     <script src="https://kit.fontawesome.com/90058b0aa5.js" crossorigin="anonymous"></script>
 </body>
 </html>
