@@ -16,3 +16,38 @@
     left: 0;
     top: 0;
 }
+#picframe{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+#picframe img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.flower__btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.btn__frame{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+#picframe i {
+    position: absolute;
+    top: 7%;
+    right: 3%;
+    color: blue; 
+}
+#Infobox {
+    font-family: 'Dongle', sans-serif;
+    font-size: 25px;
+    opacity: 50%;
+}

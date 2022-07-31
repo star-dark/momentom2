@@ -16,6 +16,20 @@ const flowerPic = [
     ["IMG/flower/루피너스.jpg","IMG/flower/초롱꽃.jpg","IMG/flower/과꽃.jpg"],
     ["IMG/flower/박하.jpg","IMG/flower/세이지.jpg","IMG/flower/백일홍.jpg"],    
 ]
+const flowerName = [
+    ["히아신스 - 비애","수선화 - 자기주의,자기애","제비꽃 - 겸양"],
+    ["물망초 - 나를 잊지 마세요","아르메리아 - 배려", "앵초 - 젊은 시절과 고뇌"],
+    ["수레국화 - 행복", "데이지 - 명랑, 순수한 마음", "수선화 - 사랑에 답하여"],
+    ["금잔화 - 이별의 슬픔","동백나무 - 당신만을 사랑합니다","아네모네 - 제 곁에 있어 주어서 고마웠어요"],
+    ["민들레 - 내 사랑 그대에게 드려요","라일락 - 사랑의 시작","은방울꽃 - 틀림없이 행복해집니다."],
+    ["장미 - 당신을 사랑합니다.","카네이션 - 존경","자스민 - 당신은 나의 것"],
+    ["금어초 - 욕망","라벤더 - 정절,침묵","초롱꽃 - 성실"],
+    ["토끼풀 - 행운과 평화","해바라기 - 그리움, 기다림","접시꽃 - 풍요"],
+    ["용담 - 당신이 슬플 때 나는 사랑한다","에리카 - 고독","다알리아 - 친절이 감사합니다"],
+    ["국화 - 지혜와 평화","카라 - 순수함","해당화 - 원망"],
+    ["루피너스 - 탐욕","초롱꽃 - 감사","과꽃 - 믿음직한 사랑"],
+    ["박하 - 다시 사랑","세이지 - 가정의 덕","백일홍 - 인연"]
+]
 const backgroundImg = document.createElement("img")
 const ranMonth = Math.floor(Math.random() * backgroundPic.length);
 const ranBackground = backgroundPic[ranMonth];
@@ -26,28 +40,38 @@ document.body.appendChild(backgroundImg);
 const createFlower = document.createElement("img");
 const nextBtn = document.getElementById("next-btn");
 const preBtn = document.getElementById("pre-btn");
-let picPage = parseInt(0);
-const birthFlower = flowerPic[ranMonth][picPage];
+const picFrame= document.getElementById("picframe");
+const flowerInfoBox = document.createElement("div");
+const infoIcon = document.querySelector("i");
+let picPage = 0;
+let birthFlower = flowerPic[ranMonth][picPage];
 createFlower.src = `${birthFlower}`;
 createFlower.id = "randomFlowerImg";
-document.body.appendChild(createFlower);
-
+picFrame.appendChild(createFlower);
 function nextImg() {
     if (picPage<2) {
-        picPage += 1;
-        createFlower.src= `${birthflower[picPage]}`;
-    }
-    else{
-        nextBtn.classList.toggle("hidden");
+        picPage = picPage + 1;
+        let birthFlower = flowerPic[ranMonth][picPage];
+        createFlower.src= `${birthFlower}`;
     }
 }
-
 function preImg() {
     if (picPage>0) {
         picPage -= 1;
-        createFlower.src= `${birthflower[picPage]}`;
-    }
-    else{
-        preBtn.classList.toggle("hidden");
+        let birthFlower = flowerPic[ranMonth][picPage];
+        createFlower.src= `${birthFlower}`;
     }
 }
+function flowerInfo() {
+    let flowerIf = flowerName[ranMonth][picPage];
+    flowerInfoBox.innerText = flowerIf;
+    flowerInfoBox.id = "Infobox" 
+    document.body.appendChild(flowerInfoBox);
+}
+function removeInfo() {
+    document.body.removeChild(flowerInfoBox);
+}
+nextBtn.addEventListener("click",nextImg);
+preBtn.addEventListener("click",preImg);
+infoIcon.addEventListener("mouseenter",flowerInfo);
+infoIcon.addEventListener("mouseleave",removeInfo);
