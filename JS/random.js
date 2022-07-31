@@ -6,7 +6,7 @@ const flowerPic = [
     ["IMG/flower/히아신스.jpg","IMG/flower/수선화.jpg","IMG/flower/제비꽃.jpg"],
     ["IMG/flower/물망초.jpg","IMG/flower/아르메리아.jpg","IMG/flower/앵초.jpg"],
     ["IMG/flower/수레국화.jpg","IMG/flower/데이지.jpg","IMG/flower/수선화.jpg"],
-    ["IMG/flower/금잔화.jpg","IMG/flower/동백꽃.jpg","IMG/flower/아네모네.png"],
+    ["IMG/flower/금잔화.jpg","IMG/flower/동백나무.jpg","IMG/flower/아네모네.png"],
     ["IMG/flower/민들레.jpg","IMG/flower/라일락.jpg","IMG/flower/은방울꽃.jpg"],
     ["IMG/flower/장미.jpg","IMG/flower/카네이션.jpeg","IMG/flower/자스민.jpg"],
     ["IMG/flower/금어초.jpg","IMG/flower/라벤더.jpg","IMG/flower/초롱꽃.jpg"],

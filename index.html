@@ -6,22 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/position.css">
 </head>
 <body>
-    <form id="login-form">
-        <input type="text" required placeholder="Please write your name">
-        <input type="submit" value="Log in">
-    </form>
-    <h1 class="hidden" id="greeting"></h1>
-    <div id="picframe">
-        <div class="btn__frame">
-          <button class="flower__btn" id="pre-btn"><</button>
-          <button class="flower__btn" id="next-btn">></button>
-        </div>
-        <i class="fa-solid fa-circle-info fa-xl"></i>
+    <div class="upper__bar">
+      <form id="login-form">
+          <input type="text" required placeholder="Please write your name">
+          <input type="submit" value="Log in">
+      </form>
+      <div id="weather" class="rightalign">
+        <span></span>
+        <span></span>
+      </div>
+      <h2 id="clock"></h1>
+      <h1 class="hidden" id="greeting"></h1>
+    </div>
+    <div>
+      <div id="picframe">
+          <div class="btn__frame">
+            <button class="flower__btn" id="pre-btn"><</button>
+            <button class="flower__btn" id="next-btn">></button>
+          </div>
+          <i class="fa-solid fa-circle-info fa-xl"></i>
+      </div>
+      <div>
+        <ul id="todo-list"></ul>
+      </div>
     </div>
     <script src="JS/index.js"></script>
     <script src="JS/random.js"></script>
+    <script src="JS/clock.js"></script>
+    <script src="JS/weather.js"></script>
     <script src="https://kit.fontawesome.com/90058b0aa5.js" crossorigin="anonymous"></script>
 </body>
 </html>

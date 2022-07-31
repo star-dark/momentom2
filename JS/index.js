@@ -5,14 +5,13 @@ const greetingText = document.getElementById("greeting");
 
 function loginSubmit(event){
     event.preventDefault();
-    loginForm.classList.add("hidden");
     const loginUser = getUserName.value;
     localStorage.setItem(UsernameKey,loginUser);
+    loginForm.classList.add("hidden");
     greeting(loginUser);
 }
 function greeting(username) {
     greetingText.innerText = `Hello ${username}!`;
     greetingText.classList.remove("hidden");
 }
-const savedUsername = localStorage.getItem(UsernameKey);
 loginForm.addEventListener("submit", loginSubmit);

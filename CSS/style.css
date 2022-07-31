@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Dongle&display=swap');
 
 *{
-    font-family: 'Caveat', cursive;
+    font-family: 'Caveat','Dongle', cursive;
     font-weight: 700;
 }
 .hidden{
@@ -49,5 +49,5 @@
 #Infobox {
     font-family: 'Dongle', sans-serif;
     font-size: 25px;
-    opacity: 50%;
+    opacity: 70%;
 }

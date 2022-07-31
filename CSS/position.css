@@ -1,0 +1,34 @@
+#login-form input:first-child{
+    width: 300px;
+    border: 0px;
+    border-bottom: 1px;
+    background-color: transparent;
+    font-size: 30px;
+}
+#clock{
+    position: fixed;
+    font-size: 60px;
+}
+.upper__bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40px;
+}
+#weather {
+    position: fixed;
+    top: 0px;
+    right: 4%;
+    font-size: 20px;
+}
+#Infobox{
+    position: fixed;
+    bottom:530px;
+    left: 50px;
+    font-size: 35px;
+}
+#picframe{
+    position: relative;
+    top: 160px;
+    left: 30px;
+}
